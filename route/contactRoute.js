@@ -38,7 +38,7 @@ router.post("/contact", (req, res) => {
     smptTransporter.sendMail(mailOptions, (error) => {
         try {
             if (error) return res.statusCode(400).json({ msg: "please fill the filds" })
-            res.status(200).json({ msg: "thank you for connecting Ehizeex!" })
+            res.status(200).json({ msg: "thank you for connecting Ajit!" })
 
         } catch (error) {
             if (error) return res.statusCode(500).json({ msg: "there is server error" })
